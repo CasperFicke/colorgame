@@ -1,3 +1,5 @@
+// colorGame.js
+
 var aantalVierkanten = 6;
 var kleuren = [];
 var pickedColor;
@@ -29,7 +31,7 @@ function setupModeButtons(){
 	 		// deselecteer beide buttons
 	 		modeButtons[0].classList.remove("geselecteerd");
 	 		modeButtons[1].classList.remove("geselecteerd");
-	 		// markeer button waarop geklikt is als geslecteerd
+	 		// markeer button waarop geklikt is als geselecteerd
 	 		this.classList.add("geselecteerd");
 	 		// if geklikte button is de easy button 
 	 		this.textContent === "Easy"
@@ -62,7 +64,7 @@ function setupVierkanten(){
 				h1.style.backgroundColor = clickedColor;
 			} else {
 				// vierkant met andere kleur is op geklikt (kleur nog niet geraden)
-				// verwijder vierkant
+				// verwijder vierkant door vierkant de kleur van de achtergrond te geven
 				this.style.backgroundColor = "#232323";
 				// show message message
 				messageDisplay.textContent = "Try again"
@@ -74,7 +76,7 @@ function setupVierkanten(){
 // reset functie; opbouwen nieuw spel
 function reset(){
 	// generate nieuwe kleuren
-	kleuren = generateRandomColors(aantalVierkanten);
+	kleuren     = generateRandomColors(aantalVierkanten);
 	// kies een random kleur
 	pickedColor = kiesKleur();
 	// verander te raden rgb kleurcode in header

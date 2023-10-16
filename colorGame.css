@@ -1,3 +1,5 @@
+/* colorGame.css */
+
 body {
  background-color: #232323;
  margin: 0;
@@ -17,8 +19,8 @@ body {
 }
 
 #container{
-	margin: 20px auto; /* 20px voor top en bottom, auto voor links en rechts  */
-	max-width: 600px;
+	margin    : 20px auto; /* 20px voor top en bottom, auto voor links en rechts  */
+	max-width : 600px;
 }
 h1{
 	text-align: center;
@@ -35,7 +37,7 @@ h1{
 	font-size: 200%;
 }
 
-/* style voor  */
+/* style voor bericht */
 #message {
 	display: inline-block;
 	width: 20%;
